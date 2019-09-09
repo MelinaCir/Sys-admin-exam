@@ -1,0 +1,13 @@
+
+
+zone "mc222ap.devopslab.xyz" {
+	type master;
+	file "/etc/bind/zones/mc222ap.devopslab.xyz";
+	allow-transfer { 192.168.20.62; };
+};
+
+zone "178.47.194.in-addr.arpa" {
+	type master;
+	file "/etc/bind/zones/mc222ap.194.47.178";
+	allow-transfer { 192.168.20.62; };
+};

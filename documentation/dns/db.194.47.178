@@ -1,0 +1,21 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns1.mc222ap.devopslab.xyz. admin.mc222ap.devopslab.xyz. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+
+
+;Name servers
+	IN	NS	ns1.mc222ap.devopslab.xyz.
+	IN	NS	ns2.mc222ap.devopslab.xyz.
+
+;PTR records
+;58	IN	PTR	ns1.mc222ap.devopslab.xyz.
+;85	IN	PTR	ns2.mc222ap.devopslab.xyz.
+;66	IN	PTR	www.mc222ap.devopslab.xyz.
