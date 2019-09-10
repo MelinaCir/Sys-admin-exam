@@ -1,0 +1,23 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	300
+@	IN	SOA	ns1.mc222ap.devopslab.xyz. admin.mc222ap.devopslab.xyz. (
+			      5		; Serial
+			 300		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 300 )		; Negative Cache TTL
+;
+mc222ap.devopslab.xyz.	IN	NS	ns1.mc222ap.devopslab.xyz.
+mc222ap.devopslab.xyz.  IN      NS      ns2.mc222ap.devopslab.xyz.
+
+;A records for name servers
+ns1		IN	A	194.47.178.58
+ns2		IN	A	194.47.178.85
+
+; Other A records
+@		IN	A	194.47.178.66
+www		IN	A	194.47.178.66
+acmea		IN	A	194.47.178.66
+acmeb		IN	A	194.47.178.80
