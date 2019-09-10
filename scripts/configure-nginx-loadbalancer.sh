@@ -21,6 +21,6 @@ echo "				proxy_pass http://backend;" >> cscloud.592.lnu.se.conf
 echo "		}" >> cscloud.592.lnu.se.conf
 echo "}" >> cscloud.592.lnu.se.conf
 
-sudo mv cycloid.592.lnu.se.conf /etc/ngnix/conf.d/
+sudo mv cscloud.592.lnu.se.conf /etc/ngnix/conf.d/
 
 sudo nginx -s reload
