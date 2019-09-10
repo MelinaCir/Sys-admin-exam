@@ -13,7 +13,7 @@ function install_apache
 		echo "Apache2 is already installed"
 	else
 		echo "Installing apache2"
-		sudo apt-get install apache2
+		sudo apt-get install apache2 -y
 	fi
 
 	apache2 -v
