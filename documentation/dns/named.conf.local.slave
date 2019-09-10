@@ -1,0 +1,19 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "mc222ap.devopslab.xyz" {
+	type slave;
+	file "/mc222ap.devopslab.xyz";
+	masters { 192.168.20.56; };
+};
+
+zone "178.47.194.in-addr.arpa" {
+	type slave;
+	file "/mc222ap.194.47.178";
+	masters { 192.168.20.56; };
+};
