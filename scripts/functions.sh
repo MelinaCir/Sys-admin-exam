@@ -33,3 +33,16 @@ function install_unzip
                 sudo apt-get -qq -y install unzip
         fi
 }
+
+function install_nginx
+{
+		if which nginx > /dev/null; then
+			echo "Nginx is already installed, skipping"
+		else
+			sudo apt install nginx -y
+		fi
+
+		nginx -v
+		echo "==============================="
+		echo ""
+}
