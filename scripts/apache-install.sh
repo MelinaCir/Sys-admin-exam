@@ -2,7 +2,7 @@
 
 # This script installs Apache2 for Ubuntu18.04 and then creates directories and files needed for configuration
 
-source apache-functions.sh
+source functions-apache.sh
 
 USERNAME='mc222ap'
 TESTUSER='test.mc222ap'
@@ -13,7 +13,6 @@ sudo apt-get update
 
 install_apache
 
-sudo systemctl start apache2
 
 # Creating directories for demo pages for the two sites. In this directories a index.html page should be created
 

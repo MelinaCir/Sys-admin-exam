@@ -7,7 +7,7 @@ function header
 		echo ""
 }
 
-function
+function install_apache
 {
 	if which apache2 > /dev/null; then
 		echo "Apache2 is already installed"
