@@ -29,10 +29,19 @@ cd $dir
 install_node
 install_unzip
 
+wget -q https://github.com/primaryobjects/Node.js-Bootstrap-Starter-Template/archive/master.zip
+unzip -q master.zip
+
+mv ./Node.js-Bootstrap-Starter-Template-master/* .
+
+rm -rf Node.js-Bootstrap-Starter-Template-master
+rm master.zip
+
 npm install
 
 npm install express
 npm install pm2
+npm install pug
 
 pm2 start app.js
 
